@@ -1,38 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hungry Master</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="meal-wrapper">
-        <div class="meal-search">
-          <div class="meal-search-box">
-            <input
-              type="text"
-              class="search-control"
-              placeholder="Enter an meal"
-              id="search-input"
-            />
-            <button type="submit" class="search-btn btn" id="search-btn">
-              <i class="fas fa-search">Search</i>
-            </button>
-          </div>
+<head>
+  <title>Hungry Master</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+
+    <main class="content-area py-5">
+      <div class="search-bar col-md-6 mx-auto">
+        <h1 class="text-center">Enter your food name</h1>
+        <div class="search-box my-5">
+          <input id="search-field" type="text" class="form-control" placeholder="Enter your food name">
+          <button onclick="searchFood()" class="btn btn-success search-btn">Search</button>
         </div>
       </div>
-      <div class="meal-result">
-        <h2 class="title">Your Search Results:</h2>
-        <div id="meal"></div>
+
+      <div id="food-container" class="row row-cols-1 row-cols-md-3 g-4 ">
+
+
       </div>
-      <div class="meal-details">
-        <div class="meal-details-content"></div>
+      <div id="food-ingredient">
+
       </div>
-    </div>
-    <script src="app.js"></script>
-  </body>
+       
+
+    </main>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+
+
+</body>
+
 </html>

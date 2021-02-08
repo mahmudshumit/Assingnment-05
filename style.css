@@ -1,58 +1,33 @@
-body {
-  font-weight: 300;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  font-family: "Poppins", sans-serif;
+body{
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.form-control{
+  background-color:rgba(255, 255, 255, 0.2);
+  padding: 22px;
+  border: none;
+  border-radius: 25px;
 }
-.title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.container {
-  min-height: 100vh;
-}
-.meal-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  text-align: center;
+.btn{
+  border-radius: 1.5rem;
+  padding: 9px 20px;
 }
 
-.meal-img img {
-  width: 30%;
-  display: block;
-}
-@media screen and (min-width: 600px) {
-  .meal-search-box {
-    width: 540px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.btn-privious{
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  #meal {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .meal-item {
-    margin: 0;
-  }
-  .meal-details {
-    width: 700px;
-  }
-}
 
-@media screen and (min-width: 992px) {
-  #meal {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.search-box{
+  position: relative;
+}
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
